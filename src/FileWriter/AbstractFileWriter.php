@@ -3,7 +3,7 @@
  * @copyright Copyright (c) 2016 Ibnu Syuhada
  */
 
-namespace App\Middlewares\FileWriter;
+namespace IS\Slim\LiteConfiguration\FileWriter;
 
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
