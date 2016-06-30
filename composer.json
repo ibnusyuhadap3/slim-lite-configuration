@@ -22,7 +22,7 @@
     ],
     "autoload": {
     	"psr-4": {
-    		"IS\\Slim\\LiteConfigure\\": "src/"
+    		"IS\\Slim\\LiteConfiguration\\": "src"
     	}
     }    
 }
