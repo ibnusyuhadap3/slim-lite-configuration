@@ -190,5 +190,5 @@ do this way will not destroy Slim settings.
 ## Credits
 [Ibnu Syuhada](https://github.com/ibnusyuhadap3)
 
-## Licence
-The MIT Licence. See the [Licence](https://github.com/ibnusyuhadap3/slim-lite-configuration/blob/master/LICENCE.md)
+## License
+The MIT Licence. See the [License](https://github.com/ibnusyuhadap3/slim-lite-configuration/blob/master/LICENCE.md)
