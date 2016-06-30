@@ -1,0 +1,32 @@
+{
+    "name": "ibnusyuhada/slim-lite-configuration",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": ["slim","framework","lite","configuration","automatically"],
+    "description": "Slim Lite Configuration designed to be simple to use in Slim Framework. You only register the file(s) or directory of config file(s), then configuration immediately ready for use. When you need to change the items of configuration in a file, just say the path file. Internally uses https://github.com/hassankhan/config.",
+    "require": {
+        "hassankhan/config": "^0.10.0",
+        "league/flysystem": "^1.0",
+        "spatie/array-to-xml": "^2.1",
+        "symfony/yaml": "^3.1"
+    },
+    "require-dev": {
+        "hassankhan/config": "^0.10.0",
+        "league/flysystem": "^1.0",
+        "spatie/array-to-xml": "^2.1",
+        "symfony/yaml": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibnu Syuhada",
+            "email": "ibnusyuhadap3@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+    	"psr-4": {
+    		"IS\\Slim\\LiteConfigure": "src/"
+    	}
+    }    
+}
