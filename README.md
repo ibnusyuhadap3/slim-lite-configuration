@@ -10,7 +10,9 @@ Slim Lite Configuration requires PHP 5.3+ and Slim Framework v3.0.0 or above.
 
 The easiest way to installing Slim Lite Configuration is via Composer
 
+```
 composer require ibnusyuhada/slim-lite-configuration
+```
 
 ## Usage
 
