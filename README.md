@@ -35,22 +35,22 @@ $container = $app->getContainer();
 
 // if want to register all files inside directory choose this one
 $container["config"] = function ($container){
-	return new IS\Slim\Lite\Configuration\Configuration(__DIR__ . "/../config",$container);
+	return new IS\Slim\LiteConfiguration\Configuration(__DIR__ . "/../config",$container);
 };
 
 // if want to register a file choose this one
 $container["config"] = function ($container){
-	return new IS\Slim\Lite\Configuration\Configuration(__DIR__ . "/../config/config.yaml",$container);
+	return new IS\Slim\LiteConfiguration\Configuration(__DIR__ . "/../config/config.yaml",$container);
 };
 
 // if want to register several files choose this one
 $container["config"] = function ($container){
-	return new IS\Slim\Lite\Configuration\Configuration([__DIR__ . "/../config/config.yaml", __DIR__ . "/../config/config.php"],$container);
+	return new IS\Slim\LiteConfiguration\Configuration([__DIR__ . "/../config/config.yaml", __DIR__ . "/../config/config.php"],$container);
 };
 
 // if want to register optional files choose this one
 $container["config"] = function ($container){
-	return new IS\Slim\Lite\Configuration\Configuration(["config.yaml","?config.php"],$container);
+	return new IS\Slim\LiteConfiguration\Configuration(["config.yaml","?config.php"],$container);
 };
 ```
 
@@ -73,7 +73,7 @@ But, if you want all configuration are available for all routes, just do like co
 $app = new \Slim\App;
 $container = $app->getContainer();
 $container["config"] = function ($container){
-	return new IS\Slim\Lite\Configuration\Configuration(__DIR__ . "/../config/config.yaml",$container);
+	return new IS\Slim\LiteConfiguration\Configuration(__DIR__ . "/../config/config.yaml",$container);
 };
 
 // register for all routes
@@ -184,7 +184,7 @@ elsewhere after
 
 ```
 $container["config"] = function ($container){
-	return new IS\Slim\Lite\Configuration\Configuration(__DIR__ . "/../config",$container);
+	return new IS\Slim\LiteConfiguration\Configuration(__DIR__ . "/../config",$container);
 };
 ```
 do this way will not destroy Slim settings.
