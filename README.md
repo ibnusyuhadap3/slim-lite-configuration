@@ -1,10 +1,12 @@
 # Slim Lite Configuration
 
-Slim Lite Configuration is a file configuration loader for Slim Framework v3.0.0 or above. Just say the file(s), then this package will register the configuration items automatically to Slim settings. This package support with Ini, Php, Json, Xml, Yaml format. If need to change the configuration file, this package can do as you want.
+[![Latest Stable Version](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/v/stable)](https://packagist.org/packages/ibnusyuhada/slim-lite-configuration) [![License](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/license)](https://github.com/ibnusyuhadap3/slim-lite-configuration/blob/master/LICENSE.md) [![Total Downloads](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/downloads)](https://packagist.org/packages/ibnusyuhada/slim-lite-configuration)
+
+Slim Lite Configuration is a file(s) configuration loader for [Slim Framework Middleware](http://www.slimframework.com/). Just say the file(s), then Slim Lite Configuration will register the configuration items automatically to Slim settings. This package support with Ini, Php, Json, Xml, Yaml format. If need to change the configuration file, this package can do as you want.
 
 ## Requirements
 
-Slim Lite Configuration requires PHP 5.3+ and Slim Framework v3.0.0 or above.
+Slim Lite Configuration requires PHP 5.3+ and works for Slim Framework v3.0.0 or above.
 
 ## Installation
 
@@ -20,7 +22,7 @@ Slim Lite Configuration designed to be simple to use in Slim Framework. You only
 
 ### Loading Files
 
-Slim Lite Configuration able to load one file or multi files or optional files at same time. Rather than say the file name one by one, you can the directory of files then configuration ready to use. Initially register Slim Lite Configuration to container
+Slim Lite Configuration able to load one file or multiple files or optional files at same time. Rather than say the file name one by one, you can add the directory of files then configuration ready to use. Initially register Slim Lite Configuration to container
 
 ```
 // start Slim Framework
@@ -54,7 +56,7 @@ $container["config"] = function ($container){
 
 ### Register Per Route
 
-After register Slim Lite Configuration into container, then we can register all items of configuration in specific route.
+As middleware, after register Slim Lite Configuration into container, then we can register all items of configuration in specific route.
 
 ```
 // configuration only available in this route
@@ -90,7 +92,7 @@ $app->run();
 
 ### Write Or Update Configuration File
 
-You are allowed to create a file of configuration if the request file is not exist. But you will get update if file configuration is exist. Here the example usage in consep Slim Lite Configuration for all routes:
+You are allowed to create a file of configuration if the request file is not exist. But you will get update if file configuration is exist. Here is the example usage in concept Slim Lite Configuration for all routes:
 
 ```
 $app->get("/blog", function($req,$res,$args){
@@ -127,7 +129,7 @@ db:
   dbname: exampleapp
 ```
 
-In design, all items of configuration will be placed in Slim settings and Slim Lite Configuration container. So, when we want to all items we can do with two possible ways in a route
+In design, all items of configuration will be placed in Slim settings and Slim Lite Configuration container. So, when we want to get all items of configuration we can do with two possible ways in a route
 
 ```
 $settings = $this->settings;
@@ -143,7 +145,7 @@ var_dump($conf->all());
 
 ### Access Specific Configuration Item
 
-In fact, when we want to access specific item, it can be done with two possible ways in a route as well
+In fact, when we want to access specific item of configuration, it can be done with two possible ways in a route as well
 
 ```
 $settings = $this->settings;
@@ -172,7 +174,7 @@ In this way, Slim Lite Configuration only update the container but not Slim sett
 
 ### Safe Memory Usage
 
-Like explained above, Slim Lite Configuration will save the items of configuration in Slim settings and container. This will need more usage of computer memory. So to safe the memory, we need to remove Slim Lite Configuration from container by placed the code below
+Like explained above, Slim Lite Configuration will save the items of configuration in Slim settings and container. This will need more usage of computer memory. So to safe the memory, we can to remove Slim Lite Configuration from container by placed the code below
 
 ```
 $container->offsetUnset("config");
@@ -191,4 +193,4 @@ do this way will not destroy Slim settings.
 [Ibnu Syuhada](https://github.com/ibnusyuhadap3)
 
 ## License
-The MIT Licence. See the [License](https://github.com/ibnusyuhadap3/slim-lite-configuration/blob/master/LICENCE.md)
+The MIT License. See the [License](https://github.com/ibnusyuhadap3/slim-lite-configuration/blob/master/LICENCE.md)
