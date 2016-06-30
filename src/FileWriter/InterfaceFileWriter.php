@@ -1,5 +1,5 @@
 <?php
-namespace App\Middlewares\FileWriter;
+namespace IS\Slim\LiteConfiguration\FileWriter;
 
 interface InterfaceFileWriter
 {
