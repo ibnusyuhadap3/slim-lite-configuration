@@ -1,6 +1,6 @@
 # Slim Lite Configuration
 
-[![Latest Stable Version](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/v/stable)](https://packagist.org/packages/ibnusyuhada/slim-lite-configuration) [![License](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/license)](https://github.com/ibnusyuhadap3/slim-lite-configuration/blob/master/LICENSE.md) [![Total Downloads](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/downloads)](https://packagist.org/packages/ibnusyuhada/slim-lite-configuration)
+[![Latest Stable Version](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/v/stable)](https://packagist.org/packages/ibnusyuhada/slim-lite-configuration) [![License](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/license)](https://github.com/ibnusyuhadap3/slim-lite-configuration/blob/master/LICENSE.md) [![Total Downloads](https://poser.pugx.org/ibnusyuhada/slim-lite-configuration/downloads)](https://packagist.org/packages/ibnusyuhada/slim-lite-configuration) [![Build Status](https://travis-ci.org/ibnusyuhadap3/slim-lite-configuration.svg?branch=master)](https://travis-ci.org/ibnusyuhadap3/slim-lite-configuration)
 
 Slim Lite Configuration is a file(s) configuration loader for [Slim Framework Middleware](http://www.slimframework.com/). Just say the file(s), then Slim Lite Configuration will register the configuration items automatically to Slim settings. This package support with Ini, Php, Json, Xml, Yaml format. If need to change the configuration file, this package can do as you want.
 
