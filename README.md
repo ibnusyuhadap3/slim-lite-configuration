@@ -189,6 +189,14 @@ $container["config"] = function ($container){
 ```
 do this way will not destroy Slim settings.
 
+## Benefits
+Conceptually, it is reasonable if configuration items are set in settings. It is means configuration should put in Slim settings. In Slim Lite Configuration, all items of configuration are appended in Slim settings. So basically, when you destroy Slim Lite Configuration from container, Slim settings will not change and the configuration is still exist. This is very useful, because we only focus on access of configuration via Slim settings only and of course we can safe memory. There is a condition where specific request URI has different configuration, and at this point Slim Lite Configuration as middleware is able to do this condition.
+
+## Testing
+```
+$phpunit
+```
+
 ## Credits
 [Ibnu Syuhada](https://github.com/ibnusyuhadap3)
 
